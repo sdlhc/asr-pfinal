@@ -1,0 +1,14 @@
+---
+applications:
+- name: asrTomcatEjemploCloudant
+  random-route: true
+  path: target/asrTomcatEjemploCloudant.war
+  memory: 256M
+  instances: 1
+  host: pFinal
+  domain: eu-gb.mybluemix.net
+  services:
+  - CloudantNoSQLDB-ov
+  - asrTranslator-sdlhc
+  - ToneAnalyzer-pFinal
+  - VozATexto-pFinal
